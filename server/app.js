@@ -13,4 +13,20 @@ app.get('/', function(req, res){
   res.sendFile(path.resolve('public/index.html'));
 });//end get
 
+app.post('/add', urlencodedParser, function(req, res){
+  res.send(200, Number(req.body.x) + Number(req.body.y));
+});//end add post
+
+app.post('/subtract', urlencodedParser, function(req, res){
+  res.send(200, Number(req.body.x) - Number(req.body.y));
+});//end subtract post
+
+app.post('/multiply', urlencodedParser, function(req, res){
+  res.send(200, Number(req.body.x) * Number(req.body.y));
+});//end multiply post
+
+app.post('/divide', urlencodedParser, function(req, res){
+  res.send(200, Number(req.body.x) / Number(req.body.y));
+});//end divide post
+
 app.use(express.static('public'));
