@@ -93,6 +93,11 @@ $(document).ready(function(){
     }
   });
 
+  $('#percent').on('click', function(){
+    $('#currentNum').html(Number($('#currentNum').html())/100);
+    $('#currentNum').attr('aged', 'true');
+  });
+
   $('#calculate').on('click', function(){
     calculate();
     //store y's value in x for use if '=' is pressed again
