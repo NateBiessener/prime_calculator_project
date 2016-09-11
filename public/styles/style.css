@@ -1,13 +1,12 @@
 button {
   background-color: #ddd;
-  min-width: 40px;
-  max-width: 40px;
+  width: 40px;
 }
 
 td {
-  max-width: 60px;
+  width: 60px;
 }
 
 #zero {
-  min-width: 100px;
+  width: 100px;
 }
